@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nextgenlifeskills</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+
+        body {
+            background-color: #111827; /* angepasst auf bg-gray-900 */
+            color: #d2b48c; /* Beige tone */
+            font-family: 'Oswald', sans-serif;
+        }
+
+        a {
+            color: #d2b48c;
+            position: relative;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #d2b48c;
+            bottom: -3px;
+            left: 0;
+            transition: width 0.3s;
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+        header {
+            background-color: #111;
+            display: flex;
+            flex-direction: column; /* Stellt sicher, dass der Titel über den Reitern ist */
+            align-items: center; /* Zentriert Titel und Reiter horizontal */
+            padding: 1rem 0; /* Abstand oben und unten */
+        }
+
+        .header-title {
+            font-size: 3rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 1rem; /* Abstand zwischen Titel und Navigation */
+        }
+
+        nav {
+            display: flex;
+            gap: 1.5rem; /* Abstand zwischen den Reitern */
+        }
+
+        .video-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .fullscreen-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .reiter:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<script>
+    ScrollReveal().reveal('.reveal-image', {
+    distance: '30px',
+    duration: 800,
+    easing: 'ease-out',
+    origin: 'bottom',
+    interval: 100
+});
+</script>
+<body>
+    <!-- Header -->
+    <header class="shadow-md sticky top-0 z-50">
+        <h1 class="header-title">
+            <a href="index.html">"nextgenlifeskills"</a>
+        </h1>
+        <nav class="flex">
+            <a href="reiter-a.html">Sport, Gesundheit, Disziplin und Motivation</a>
+            <a href="reiter-b.html">Persönliche Entwicklung und Achtsamkeit</a>
+            <a href="reiter-c.html">Finanzen und Unternehmertum</a>
+            <a href="reiter-d.html">Weiterbildung und Zukunftskompetenzen</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-8 bg-gray-900 text-beige space-y-20"> <!-- geändert von bg-black zu bg-gray-900 -->
+        <section class="text-center max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Sport, Gesundheit, Disziplin und Motivation</h2>
+            <p class="text-xl">
+                Stärke deinen Körper und deinen Geist und lerne, wie körperliche Fitness, gesunde Ernährung sowie Disziplin dein Leben verändern können.
+            </p>
+        </section>
+
+        <section class="w-full max-w-5xl mx-auto">
+            <video 
+                autoplay 
+                muted 
+                loop 
+                playsinline 
+                class="w-full rounded-xl shadow-lg my-12"
+            >
+                <source src="Indonesia.mp4" type="video/mp4">
+                Dein Browser unterstützt das Video-Tag nicht.
+            </video>
+        </section>
+    
+        <section class="py-12 bg-gray-800 text-center">
+            <h2 class="text-2xl font-semibold mb-6">Erkunde die Bereiche</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#sport" class="px-6 py-3 bg-gray-700 rounded-lg hover:bg-gray-600 transition">🏋️ Sport</a>
+                <a href="#ernaehrung" class="px-6 py-3 bg-gray-700 rounded-lg hover:bg-gray-600 transition">🍽️ Ernährung</a>
+                <a href="#disziplin" class="px-6 py-3 bg-gray-700 rounded-lg hover:bg-gray-600 transition">🎯 Motivation und Disziplin</a>
+            </div>
+        </section>
+    
+        <!-- Sektionen -->
+        <section id="sport" class="p-8 max-w-5xl mx-auto space-y-6 scroll-mt-24">
+            <h3 class="text-3xl font-bold text-center">🏋️ Sport</h3>
+            <p>Hier geht es um Trainingsmethoden, Routinen und alles, was deinen Körper in Form bringt.</p>
+        
+            <h4 class="text-2xl font-semibold mt-8">Wirkung von Sport auf Körper und Geist</h4>
+            
+            <div class="space-y-4">
+                <h5 class="text-xl font-bold"> Körperliche Vorteile</h5>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Stärkt Herz und Kreislauf, fördert die Durchblutung</li>
+                    <li>Verbessert das Immunsystem – bis zu 40 % weniger Erkältungen</li>
+                    <li>Mehr Energie im Alltag durch besseren Stoffwechsel und Sauerstoffversorgung</li>
+                    <li>Muskelaufbau, Beweglichkeit und gesundes Körpergewicht (z. B. gesunder BMI)</li>
+                    <li>Reduziert das Risiko für Herz-Kreislauf-Erkrankungen um bis zu 35 % (WHO)</li>
+                </ul>
+        
+                <h5 class="text-xl font-bold mt-6"> Geistige Vorteile</h5>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Stressabbau durch Senkung von Cortisol und Ausschüttung von Endorphinen</li>
+                    <li>Steigerung von Konzentration und Lernfähigkeit durch bessere Hirndurchblutung</li>
+                    <li>Fördert mentale Gesundheit – wirkt gegen Angst und Depression</li>
+                    <li>Stärkt das Selbstbewusstsein und die Ausstrahlung</li>
+                </ul>
+        
+            </div>
+        
+            <h4 class="text-2xl font-semibold mt-8"> Sport und Produktivität im Alltag</h4>
+            <ul class="list-disc list-inside space-y-1">
+                <li>Mehr Energie, Ausdauer und geistige Leistungsfähigkeit</li>
+                <li>Bessere Sauerstoffversorgung steigert Konzentration und Fokus</li>
+                <li>Fördert neuronale Plastizität – besseres Lernen und Problemlösen</li>
+                <li>Verbesserter Schlaf (bis zu 65 % bessere Schlafqualität laut Studien)</li>
+                <li>Klares Zeitmanagement durch regelmäßige Bewegung</li>
+            </ul>
+        
+            <p class="mt-4">
+                Bereits kurze Einheiten wie ein Spaziergang können deine Energie und Konzentration deutlich verbessern. Teste es einfach selbst an einem Tag mit und ohne Bewegung!
+            </p>
+        
+            <h5 class="text-lg font-medium mt-6"> Wissenschaftlich belegt</h5>
+            <ul class="list-disc list-inside">
+                <li>Uni Bristol: 79 % berichten über bessere Konzentration & Fokus durch Sport</li>
+                <li>Harvard: Sport aktiviert den präfrontalen Kortex – wichtig für Entscheidungen</li>
+            </ul>
+        </section>
+        
+        <section id="ernaehrung" class="p-8 max-w-5xl mx-auto space-y-6 scroll-mt-24">
+            <h3 class="text-3xl font-bold text-center">🍽️ Ernährung</h3>
+            <p>Erfahre mehr über gesunde Ernährung, Rezepte und Energie für deinen Alltag.</p>
+        
+            <h4 class="text-2xl font-semibold mt-8">Auswirkung auf Körper und Geist</h4>
+        
+            <p>Eine ausgewogene Ernährung ist entscheidend für dein körperliches und mentales Wohlbefinden. Sie beeinflusst deine Energie, Konzentration, deine Gesundheit und sogar dein Selbstbewusstsein.</p>
+        
+            <h5 class="text-xl font-bold mt-6"> Körperliche Gesundheit</h5>
+            <ul class="list-disc list-inside space-y-1">
+                <li>Makronährstoffe liefern Energie: komplexe Kohlenhydrate, gesunde Fette und ausreichend Proteine</li>
+                <li>Unterstützt Muskelaufbau und Zellregeneration</li>
+                <li>Stärkt das Immunsystem und schützt vor Krankheiten</li>
+                <li>Langfristige Gesundheit durch nährstoffreiche Lebensmittel</li>
+            </ul>
+        
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full text-left mt-4 text-sm border border-gray-600">
+                    <thead class="bg-gray-700">
+                        <tr>
+                            <th class="px-4 py-2">Makronährstoff</th>
+                            <th class="px-4 py-2">Funktion</th>
+                            <th class="px-4 py-2">Gesunde Quellen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-gray-800">
+                            <td class="px-4 py-2">Kohlenhydrate</td>
+                            <td class="px-4 py-2">Energiequelle</td>
+                            <td class="px-4 py-2">Vollkorn, Haferflocken, Süßkartoffeln</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2">Proteine</td>
+                            <td class="px-4 py-2">Muskelaufbau, Zellreparatur</td>
+                            <td class="px-4 py-2">Fisch, Eier, Hülsenfrüchte</td>
+                        </tr>
+                        <tr class="bg-gray-800">
+                            <td class="px-4 py-2">Fette</td>
+                            <td class="px-4 py-2">Zellschutz, Hormonproduktion</td>
+                            <td class="px-4 py-2">Avocados, Nüsse, Olivenöl</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <h5 class="text-xl font-bold mt-6"> Mentale Gesundheit</h5>
+            <ul class="list-disc list-inside space-y-1">
+                <li>Omega-3-Fettsäuren fördern Gehirnfunktion und Gedächtnis</li>
+                <li>Langsame Kohlenhydrate stabilisieren die Konzentration</li>
+                <li>Proteine fördern Dopamin – mehr Fokus, Motivation und gute Laune</li>
+                <li>Zu viel Zucker, Dehydration und künstliche Zusatzstoffe wirken sich negativ auf Stimmung und Leistung aus</li>
+            </ul>
+        
+            <h5 class="text-lg font-medium mt-6"> Gut vs.  Schlecht</h5>
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full text-left text-sm border border-gray-600 mt-2">
+                    <thead class="bg-gray-700">
+                        <tr>
+                            <th class="px-4 py-2">Positive Lebensmittel</th>
+                            <th class="px-4 py-2">Negative Lebensmittel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-gray-800">
+                            <td class="px-4 py-2">Vollkorn, Haferflocken, Quinoa</td>
+                            <td class="px-4 py-2">Weißbrot, raffinierte Zucker</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2">Avocados, Nüsse, Olivenöl</td>
+                            <td class="px-4 py-2">Transfette, frittierte Speisen</td>
+                        </tr>
+                        <tr class="bg-gray-800">
+                            <td class="px-4 py-2">Hülsenfrüchte, Fisch, mageres Fleisch</td>
+                            <td class="px-4 py-2">Fast Food, Softdrinks</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2">Wasser, ungesüßter Tee</td>
+                            <td class="px-4 py-2">Alkohol, Energydrinks</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <h5 class="text-xl font-bold mt-6"> Auswirkungen im Alltag</h5>
+            <ul class="list-disc list-inside space-y-1">
+                <li>Mehr Energie & Konzentration, weniger Heißhunger</li>
+                <li>Bessere Belastbarkeit – mental und körperlich</li>
+                <li>Besseres Hautbild und Schlafqualität</li>
+                <li>Stärkeres Selbstbewusstsein durch gesünderes Aussehen</li>
+            </ul>
+        
+            <h5 class="text-xl font-bold mt-6"> Persönliche Erfahrung</h5>
+            <p>
+                Vor der Ernährungsumstellung war ich oft müde, schlecht gelaunt und hatte Konzentrationsprobleme – trotz ausreichend Schlaf. Seit ich auf eine ausgewogene Ernährung achte (weniger Zucker, mehr Proteine, gute Fette, kein Fast Food), fühle ich mich energiegeladener, schlafe besser, habe mehr Fokus und bin allgemein zufriedener im Alltag. Es muss nicht perfekt sein – aber konsequent. Kleine Veränderungen bewirken langfristig Großes.
+            </p>
+        </section>
+        
+        
+        <section id="disziplin" class="p-8 max-w-5xl mx-auto space-y-4 scroll-mt-24">
+            <h3 class="text-3xl font-bold text-center">🎯 Motivation und Disziplin</h3>
+            <p>Ob du ein Ziel erreichst, hängt selten von Motivation allein ab. Es ist die Disziplin, die dich weitermachen lässt – unterstützt durch starke Gewohnheiten und Routinen.</p>
+
+    <h4 class="text-2xl font-semibold mt-8">Motivation vs. Disziplin – der Unterschied</h4>
+    <div class="overflow-x-auto">
+        <table class="table-auto w-full text-left text-sm border border-gray-600 mt-2">
+            <thead class="bg-gray-700">
+                <tr>
+                    <th class="px-4 py-2">Motivation</th>
+                    <th class="px-4 py-2">Disziplin</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-gray-800">
+                    <td class="px-4 py-2">Emotional, kurzfristiger Impuls</td>
+                    <td class="px-4 py-2">Konsequent, langfristig stabil</td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-2">Hängt von äußeren Umständen ab</td>
+                    <td class="px-4 py-2">Wird durch Routinen und Gewohnheiten gestärkt</td>
+                </tr>
+                <tr class="bg-gray-800">
+                    <td class="px-4 py-2">„Ich habe gerade Lust“</td>
+                    <td class="px-4 py-2">„Ich mache es, weil ich es mir vorgenommen habe“</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h5 class="text-xl font-bold mt-6">Warum Disziplin wichtiger ist als Motivation</h5>
+    <ul class="list-disc list-inside space-y-1">
+        <li>Motivation ist unzuverlässig – Disziplin ist erlernbar</li>
+        <li>Disziplin bringt dich durch Phasen ohne Antrieb</li>
+        <li>Kontinuität führt zu langfristigem Erfolg</li>
+    </ul>
+
+
+    <h4 class="text-2xl font-semibold mt-8">Gewohnheiten & Routinen als Schlüssel zur Disziplin</h4>
+    <p>Gewohnheiten automatisieren dein Verhalten. Routinen geben deinem Tag Struktur – beides stärkt deine Disziplin ohne ständige Willenskraft zu verbrauchen.</p>
+
+    <div class="overflow-x-auto">
+        <table class="table-auto w-full text-left text-sm border border-gray-600 mt-4">
+            <thead class="bg-gray-700">
+                <tr>
+                    <th class="px-4 py-2">Routine</th>
+                    <th class="px-4 py-2">Gewohnheit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-gray-800">
+                    <td class="px-4 py-2">Geplant, bewusst</td>
+                    <td class="px-4 py-2">Unbewusst, automatisch</td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-2">Z. B. morgens 30 Min. Sport</td>
+                    <td class="px-4 py-2">Z. B. Kaffee nach dem Aufstehen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h5 class="text-xl font-bold mt-6">So baust du neue Gewohnheiten auf</h5>
+    <ul class="list-disc list-inside space-y-1">
+        <li>Klein anfangen – z. B. 5 Minuten täglich</li>
+        <li>Mit bestehender Routine verknüpfen (z. B. nach dem Zähneputzen)</li>
+        <li>Belohnung einbauen – Musik, Erfolgstagebuch etc.</li>
+        <li>4 Wochen konsequent durchziehen</li>
+    </ul>
+
+    <h5 class="text-xl font-bold mt-6">Schlechte Gewohnheiten loswerden</h5>
+    <ul class="list-disc list-inside space-y-1">
+        <li>Auslöser erkennen und vermeiden</li>
+        <li>Hürden einbauen (z. B. Apps löschen, Regeln festlegen)</li>
+        <li>Negativkonsequenzen bewusst machen</li>
+        <li>Alte Gewohnheiten durch neue ersetzen</li>
+    </ul>
+
+    <h5 class="text-lg font-medium mt-6"> Wissenschaftliche Erkenntnisse</h5>
+    <ul class="list-disc list-inside">
+        <li>Stanford: Kinder mit mehr Selbstdisziplin schneiden später im Leben besser ab</li>
+        <li>Duke University: 45 % unseres Verhaltens basiert auf Gewohnheiten</li>
+        <li>Studien: Routinen senken Stress und steigern Produktivität</li>
+        <li>Michael Phelps: Feste Wettkampfroutine als Erfolgsfaktor</li>
+    </ul>
+
+    <h5 class="text-xl font-bold mt-6">Hilfsmittel für deine Disziplin</h5>
+    <ul class="list-disc list-inside space-y-1">
+        <li>Apps: Habit Tracker, Kalender, To-Do-Listen</li>
+        <li>Physisch: Whiteboard, Checklisten, Uhren, Fitness- & Schlaftracker</li>
+        <li>Erfolge aufschreiben – das steigert die Verbindlichkeit</li>
+    </ul>
+
+    <p class="mt-2"> <strong>Buchtipp:</strong> <em>„Die 1 % Methode“</em> von James Clear – ideal für alle, die mit kleinen Schritten Großes erreichen wollen.</p>
+        </section>
+        
+    
+    </main>
+</body>
+</html>
+
+    
+
